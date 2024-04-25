@@ -13,6 +13,7 @@
         background-color: #70c5ce;
     }
     canvas {
+
         display: block;
         margin: 0;
         width: 100vw;
@@ -298,13 +299,13 @@
             if (pipe.x + pipe.width <= 0) {
                 pipes.shift();
                 score++;
-                if (score % 5 == 0) {
+                if (score % 5 === 0) {
                   pipeInterval -= 20;
                 }
-                if (score == 26) {
+                if (score === 26) {
                   pipeInterval += 160;
                 }
-                if (score == 29) {
+                if (score === 29) {
                   pipeSpeed = 4;
                   pipeColor = '#ee2222';
                   pipeAccent = '#dd2222';
